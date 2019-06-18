@@ -1,0 +1,32 @@
+<h1>New Employee</h1>
+
+<%= render 'form', employee: @employee %>
+
+<%= link_to 'Back', employees_path %>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  var validator=$("#registration").validate({
+    rules: {
+        "employee[virtual_first_name]": {
+            required: true,
+            alphanumeric: true,
+        },
+        "employee[first_name]": {
+            required: true,
+            alphanumeric: true,
+        }
+    },
+    messages: {
+        "employee[virtual_first_name]": {
+            required: "You must enter a virtual first name",
+            alphanumeric: "virtual first name format not valid",
+        },
+        "employee[first_name]": {
+            required: "You must enter a first name",
+            alphanumeric: "first name format not valid",
+        }
+    }
+  });
+};
+</script>>

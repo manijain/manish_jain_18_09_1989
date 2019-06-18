@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @employee.first_name %>
+</p>
+
+<p>
+  <strong>Virtual first name:</strong>
+  <%= @employee.virtual_first_name %>
+</p>
+
+<p>
+  <strong>Username email:</strong>
+  <%= @employee.username_email %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @employee.gender %>
+</p>
+
+<p>
+  <strong>Chat limit:</strong>
+  <%= @employee.chat_limit %>
+</p>
+
+<p>
+  <strong>Email limit:</strong>
+  <%= @employee.email_limit %>
+</p>
+
+<p>
+  <strong>Is multisession allow:</strong>
+  <%= @employee.is_multisession_allow %>
+</p>
+
+<p>
+  <strong>Select volume:</strong>
+  <%= @employee.select_volume %>
+</p>
+
+<p>
+  <strong>Select ring type:</strong>
+  <%= @employee.select_ring_type %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @employee.created_date %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @employee.role %>
+</p>
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

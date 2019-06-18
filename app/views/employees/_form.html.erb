@@ -1,0 +1,72 @@
+<%= form_with(model: employee, local: true, id: "registration") do |form| %>
+  <% if employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :virtual_first_name %>
+    <%= form.text_field :virtual_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :username_email %>
+    <%= form.text_field :username_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.select :gender, ["Male", "Female"] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chat_limit %>
+    <%= form.select :chat_limit, [1,2,3,4,5] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email_limit %>
+    <%= form.select :email_limit, [1,2,3,4,5] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_multisession_allow %>
+    <%= form.text_field :is_multisession_allow %>
+  </div>
+
+  <div class="field">
+    <%= form.label :select_volume %>
+    <%= form.select :select_volume, [1,2,3,4,5] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :select_ring_type %>
+    <%= form.select :select_ring_type, [1,2,3,4,5] %>
+  </div>
+
+  <div class="field">
+    <%= form.label :created_at %>
+    <%= form.date_select :created_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :role %>
+    <%= form.text_field :role %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

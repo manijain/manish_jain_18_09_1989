@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  virtual_first_name: MyString
+  username_email: MyString
+  gender: MyString
+  chat_limit: 1
+  email_limit: MyString
+  is_multisession_allow: MyString
+  select_volume: 1
+  select_ring_type: MyString
+  created_at: 2019-06-10
+  role: MyString
+
+two:
+  first_name: MyString
+  virtual_first_name: MyString
+  username_email: MyString
+  gender: MyString
+  chat_limit: 1
+  email_limit: MyString
+  is_multisession_allow: MyString
+  select_volume: 1
+  select_ring_type: MyString
+  created_at: 2019-06-10
+  role: MyString
